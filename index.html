@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AtendiBot – Atendimento automático via WhatsApp</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --green: #25D366;
+    --dark: #0a0a0a;
+    --text: #1a1a1a;
+    --muted: #555;
+    --bg: #f7f7f5;
+  }
+  body { font-family: 'Sora', sans-serif; background: var(--bg); color: var(--text); }
+
+  header {
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    background: #fff;
+  }
+  .logo { font-size: 1.3rem; font-weight: 700; }
+  .logo span { color: var(--green); }
+
+  .hero {
+    max-width: 700px;
+    margin: 5rem auto;
+    padding: 0 2rem;
+    text-align: center;
+  }
+  .hero h1 { font-size: 2.8rem; font-weight: 700; line-height: 1.2; margin-bottom: 1.2rem; }
+  .hero h1 em { font-style: normal; color: var(--green); }
+  .hero p { font-size: 1.1rem; color: var(--muted); margin-bottom: 2.5rem; line-height: 1.7; }
+  .btn {
+    display: inline-block;
+    background: var(--green);
+    color: #fff;
+    padding: 0.9rem 2.2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+  .btn:hover { opacity: 0.85; }
+
+  .features {
+    max-width: 900px;
+    margin: 0 auto 5rem;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+  }
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    border: 1px solid #e8e8e8;
+  }
+  .card .icon { font-size: 2rem; margin-bottom: 1rem; }
+  .card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; }
+  .card p { font-size: 0.9rem; color: var(--muted); line-height: 1.6; }
+
+  footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    border-top: 1px solid #e0e0e0;
+  }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Atendi<span>Bot</span></div>
+</header>
+
+<section class="hero">
+  <h1>Agendamentos automáticos pelo <em>WhatsApp</em></h1>
+  <p>O AtendiBot responde seus clientes, realiza agendamentos e confirma horários automaticamente — 24 horas por dia, sem você precisar fazer nada.</p>
+  <a href="mailto:contato@atendibot.com" class="btn">Fale conosco</a>
+</section>
+
+<section class="features">
+  <div class="card">
+    <div class="icon">🤖</div>
+    <h3>Atendimento automático</h3>
+    <p>Responde seus clientes instantaneamente via WhatsApp, sem intervenção manual.</p>
+  </div>
+  <div class="card">
+    <div class="icon">📅</div>
+    <h3>Agendamento inteligente</h3>
+    <p>Verifica disponibilidade e confirma horários automaticamente em tempo real.</p>
+  </div>
+  <div class="card">
+    <div class="icon">💼</div>
+    <h3>Para pequenos negócios</h3>
+    <p>Ideal para salões, clínicas, consultorios e qualquer negócio que trabalha com agendamentos.</p>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 AtendiBot. Todos os direitos reservados. | <a href="privacy.html">Política de Privacidade</a></p>
+</footer>
+
+</body>
+</html>
